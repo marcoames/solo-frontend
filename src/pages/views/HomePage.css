@@ -1,0 +1,104 @@
+/* src/pages/views/HomePage.css */
+.HomePage {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../assets/solo-luminosa-contra-arquitetura_3.jpg'); /* Ensure the image path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensure the page fills the screen */
+    display: flex;
+    flex-direction: column; /* Align child elements vertically */
+    justify-content: space-between; /* Ensure header, main, and footer are spaced out */
+    position: relative; /* Allow the overlay to cover the whole page */
+}
+
+/* Transparent overlay that covers the entire page */
+.HomePage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1; /* Ensure the overlay stays behind the content */
+}
+
+/* Adjust header to ensure it doesn’t overflow */
+.HomePage .App-header {
+    color: white;
+    padding: 30px 20px; /* Adjust padding to fit better */
+    flex: 1; /* Allow header to take up the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure the heading is not too large and doesn't overflow */
+.HomePage .App-header h1 {
+    font-size: 2.5rem; /* Slightly smaller size */
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.HomePage .App-buttons {
+    margin-top: 20px;
+}
+
+.HomePage .App-buttons button {
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    margin: 5px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.HomePage .App-buttons button:hover {
+    background-color: #e64a19;
+}
+
+/* Main content should not take up more space than necessary */
+.HomePage .App-main {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    margin-top: 10px;
+}
+
+/* Developer Buttons */
+.HomePage .App-dev-buttons {
+    margin-top: 20px;
+}
+
+.HomePage .App-dev-buttons button {
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.HomePage .App-dev-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer always sticks to the bottom */
+.HomePage .App-footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
