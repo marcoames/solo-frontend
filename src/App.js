@@ -6,7 +6,7 @@ import './App.css'; // Import the component-specific styles
 // Import Pages
 import HomePage from './pages/HomePage';
 import CreateUserPage from './pages/CreateUserPage';
-import CreateHotelPage from './pages/CreateHotelPage';
+import CreateCabinPage from './pages/CreateCabinPage';
 import CreateReservationPage from './pages/CreateReservationPage';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           {/* Define Routes for Pages */}
           <Route path="/" element={<HomePage />} />
           <Route path="/create-user" element={<CreateUserPage />} />
-          <Route path="/create-hotel" element={<CreateHotelPage />} />
+          <Route path="/create-cabin" element={<CreateCabinPage />} />
           <Route path="/create-reservation" element={<CreateReservationPage />} />
         </Routes>
       </div>

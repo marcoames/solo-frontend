@@ -28,8 +28,8 @@ function HomePage() {
           <Link to="/create-user">
             <button>Create User</button>
           </Link>
-          <Link to="/create-hotel">
-            <button>Create Hotel</button>
+          <Link to="/create-cabin">
+            <button>Create Cabin</button>
           </Link>
           <Link to="/create-reservation">
             <button>Create Reservation</button>
@@ -38,7 +38,7 @@ function HomePage() {
       </main>
 
       <footer className="App-footer">
-        <p>© 2024 SOLO, All rights reserved</p>
+        <p>© 2025 SOLO, All rights reserved</p>
       </footer>
     </div>
   );
